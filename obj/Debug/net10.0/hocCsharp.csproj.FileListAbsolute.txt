@@ -1,5 +1,0 @@
-C:\Users\laptoptk\Downloads\hocCsharp\obj\Debug\net10.0\hocCsharp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\laptoptk\Downloads\hocCsharp\obj\Debug\net10.0\hocCsharp.AssemblyInfoInputs.cache
-C:\Users\laptoptk\Downloads\hocCsharp\obj\Debug\net10.0\hocCsharp.AssemblyInfo.cs
-C:\Users\laptoptk\Downloads\hocCsharp\obj\Debug\net10.0\hocCsharp.csproj.CoreCompileInputs.cache
-C:\Users\laptoptk\Downloads\hocCsharp\obj\Debug\net10.0\hocCsharp.sourcelink.json
