@@ -1,0 +1,15 @@
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\bin\Debug\net10.0\hocCsharp.exe
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\bin\Debug\net10.0\hocCsharp.deps.json
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\bin\Debug\net10.0\hocCsharp.runtimeconfig.json
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\bin\Debug\net10.0\hocCsharp.dll
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\bin\Debug\net10.0\hocCsharp.pdb
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\obj\Debug\net10.0\hocCsharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\obj\Debug\net10.0\hocCsharp.AssemblyInfoInputs.cache
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\obj\Debug\net10.0\hocCsharp.AssemblyInfo.cs
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\obj\Debug\net10.0\hocCsharp.csproj.CoreCompileInputs.cache
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\obj\Debug\net10.0\hocCsharp.sourcelink.json
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\obj\Debug\net10.0\hocCsharp.dll
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\obj\Debug\net10.0\refint\hocCsharp.dll
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\obj\Debug\net10.0\hocCsharp.pdb
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\obj\Debug\net10.0\hocCsharp.genruntimeconfig.cache
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\obj\Debug\net10.0\ref\hocCsharp.dll

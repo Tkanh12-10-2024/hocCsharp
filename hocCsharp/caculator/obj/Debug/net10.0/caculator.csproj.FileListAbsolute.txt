@@ -1,0 +1,15 @@
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\caculator\obj\Debug\net10.0\caculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\caculator\obj\Debug\net10.0\caculator.AssemblyInfoInputs.cache
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\caculator\obj\Debug\net10.0\caculator.AssemblyInfo.cs
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\caculator\obj\Debug\net10.0\caculator.csproj.CoreCompileInputs.cache
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\caculator\obj\Debug\net10.0\caculator.sourcelink.json
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\caculator\bin\Debug\net10.0\caculator.exe
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\caculator\bin\Debug\net10.0\caculator.deps.json
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\caculator\bin\Debug\net10.0\caculator.runtimeconfig.json
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\caculator\bin\Debug\net10.0\caculator.dll
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\caculator\bin\Debug\net10.0\caculator.pdb
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\caculator\obj\Debug\net10.0\caculator.dll
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\caculator\obj\Debug\net10.0\refint\caculator.dll
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\caculator\obj\Debug\net10.0\caculator.pdb
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\caculator\obj\Debug\net10.0\caculator.genruntimeconfig.cache
+C:\Users\laptoptk\Downloads\hocCsharp\hocCsharp\caculator\obj\Debug\net10.0\ref\caculator.dll
