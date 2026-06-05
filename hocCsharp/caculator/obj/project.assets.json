@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\caculator\\caculator.csproj",
+      "projectUniqueName": "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\hocCsharp\\caculator\\caculator.csproj",
       "projectName": "caculator",
-      "projectPath": "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\caculator\\caculator.csproj",
+      "projectPath": "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\hocCsharp\\caculator\\caculator.csproj",
       "packagesPath": "C:\\Users\\laptoptk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\caculator\\obj\\",
+      "outputPath": "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\hocCsharp\\caculator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

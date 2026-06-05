@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\Arrays\\Arrays.csproj": {}
+    "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\hocCsharp\\Arrays\\Arrays.csproj": {}
   },
   "projects": {
-    "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\Arrays\\Arrays.csproj": {
+    "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\hocCsharp\\Arrays\\Arrays.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\Arrays\\Arrays.csproj",
+        "projectUniqueName": "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\hocCsharp\\Arrays\\Arrays.csproj",
         "projectName": "Arrays",
-        "projectPath": "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\Arrays\\Arrays.csproj",
+        "projectPath": "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\hocCsharp\\Arrays\\Arrays.csproj",
         "packagesPath": "C:\\Users\\laptoptk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\Arrays\\obj\\",
+        "outputPath": "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\hocCsharp\\Arrays\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

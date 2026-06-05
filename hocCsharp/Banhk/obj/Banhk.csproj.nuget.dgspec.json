@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\Banhk\\Banhk.csproj": {}
+    "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\hocCsharp\\Banhk\\Banhk.csproj": {}
   },
   "projects": {
-    "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\Banhk\\Banhk.csproj": {
+    "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\hocCsharp\\Banhk\\Banhk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\Banhk\\Banhk.csproj",
+        "projectUniqueName": "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\hocCsharp\\Banhk\\Banhk.csproj",
         "projectName": "Banhk",
-        "projectPath": "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\Banhk\\Banhk.csproj",
+        "projectPath": "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\hocCsharp\\Banhk\\Banhk.csproj",
         "packagesPath": "C:\\Users\\laptoptk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\Banhk\\obj\\",
+        "outputPath": "C:\\Users\\laptoptk\\Downloads\\hocCsharp\\hocCsharp\\hocCsharp\\Banhk\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
