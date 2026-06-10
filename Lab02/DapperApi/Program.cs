@@ -5,6 +5,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
+builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+builder.Services.AddControllers();
+builder.Services.
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
