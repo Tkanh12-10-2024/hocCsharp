@@ -1,9 +1,9 @@
 using System;
-namespace DapperApi.Model;
+namespace DapperApi.Models;
 
 public class Student {
     public int ID {get;set;}
     public int age {get;set;}
-    public string name {get;set} = string.empty;
+    public string name {get;set;} = "";
     
 }

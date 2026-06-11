@@ -1,12 +1,12 @@
-using System;
-using DapperApi.Model;
+using DapperApi.Models;
+
 namespace DapperApi.Repositories;
 
-public interface IStudentRepository {
-    IEnumerable<Student> getAll();
-    Student ? getByID(Int id);
+public interface IStudentRepository
+{
+    IEnumerable<Student> GetAll();
+    Student? GetById(int id);
     void Create(Student student);
-    void Updaye(Sttudent student);
-    void Delete(int ID);
-    
+    void Update(Student student);
+    void Delete(int id);
 }

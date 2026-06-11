@@ -1,50 +1,63 @@
-using System;
+using DapperApi;
 using Dapper;
-using Microsoft.Data.SqlClient;
 using System.Data;
-using DapperApi.Model'
+using DapperApi.Models;
+using Microsoft.Data.SqlClient;
 
-public  StudentRepository : IStudentRepository {
-    private readonly string _ConnStr;
-    public StudentRepository(IConfiguration config) {
-        _ConnStr = config.getConnectionString("DefalutConnection");
+
+namespace DapperApi.Repositories;
+
+public class StudentRepository : IStudentRepository
+{
+    private readonly string _connStr;
+
+    public StudentRepository(IConfiguration config)
+    {
+        _connStr = config.GetConnectionString("DefaultConnection")!;
     }
 
-    /*get ALL*/
-    private IDbConnection NewConnection() => new SqlConnection(_ConnStr);
-    public IEnumerable<Student> getAll() {
-        using var db = new Connection();
+    private IDbConnection NewConnection()
+        => new SqlConnection(_connStr);
+
+    public IEnumerable<Student> GetAll()
+    {
+        using var db = NewConnection();
         return db.Query<Student>("SELECT * FROM Students");
     }
 
-    /* get by ID*/
-    public Student? getByID(int ID) {
-        using var db = new Connection();
-        db.QuerySingleOrDefault<Student>("SELECT * FROM Students Where Id = @Id",new {Id = ID});
-    }
-    /* Create*/
-    public void Create(Student student) {
-        using var db = new Connection();
-        db.Execute( 
-            "ISERTINTO Students (name,age) VALUES (@name,@age)",student
-        );
+    public Student? GetById(int id)
+    {
+        using var db = NewConnection();
+
+        return db.QuerySingleOrDefault<Student>(
+            "SELECT * FROM Students WHERE Id=@Id",
+            new { Id = id });
     }
 
-    /* UPDATE */
-    public void Update(Student student) {
-        using var db = new Connection();
+    public void Create(Student student)
+    {
+        using var db = NewConnection();
+
         db.Execute(
-            "UPDATE Students SET name = @name;age = @age WHERE ID = @ID",student
-        );
+            "INSERT INTO Students(Name,Age) VALUES(@Name,@Age)",
+            student);
     }
 
-    /* DELETE */
-    public  void Delete(int id) {
-        using var db = new Connection();
+    public void Update(Student student)
+    {
+        using var db = NewConnection();
+
         db.Execute(
-            "DELETE FROM Sudents WHERE Id = @Id",new {Id = id}
-        ); 
+            "UPDATE Students SET Name=@Name, Age=@Age WHERE Id=@Id",
+            student);
     }
 
+    public void Delete(int id)
+    {
+        using var db = NewConnection();
 
+        db.Execute(
+            "DELETE FROM Students WHERE Id=@Id",
+            new { Id = id });
+    }
 }
