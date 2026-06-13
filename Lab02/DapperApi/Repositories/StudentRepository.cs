@@ -1,8 +1,9 @@
 using DapperApi;
 using Dapper;
+using Microsoft.Data.SqlClient;
 using System.Data;
 using DapperApi.Models;
-using Microsoft.Data.SqlClient;
+
 
 
 namespace DapperApi.Repositories;
@@ -21,6 +22,7 @@ public class StudentRepository : IStudentRepository
 
     public IEnumerable<Student> GetAll()
     {
+        Console.WriteLine("Connected!");
         using var db = NewConnection();
         return db.Query<Student>("SELECT * FROM Students");
     }
@@ -34,12 +36,13 @@ public class StudentRepository : IStudentRepository
             new { Id = id });
     }
 
+
+    /* Create new student*/
     public void Create(Student student)
     {
         using var db = NewConnection();
-
         db.Execute(
-            "INSERT INTO Students(Name,Age) VALUES(@Name,@Age)",
+            "INSERT INTO Students(Name,Age,Email) VALUES(@Name,@Age,@Email)",
             student);
     }
 
@@ -48,7 +51,7 @@ public class StudentRepository : IStudentRepository
         using var db = NewConnection();
 
         db.Execute(
-            "UPDATE Students SET Name=@Name, Age=@Age WHERE Id=@Id",
+            "UPDATE Students SET Name=@Name, Age=@Age WHERE Id=@Id,Email=@Email WHERE Id = @Id",
             student);
     }
 
@@ -60,4 +63,14 @@ public class StudentRepository : IStudentRepository
             "DELETE FROM Students WHERE Id=@Id",
             new { Id = id });
     }
+
+    // search by name
+    public IEnumerable<Student> SearchByName(string name)
+    {
+        using var db = NewConnection();
+        return db.Query<Student>(
+            "SELECT* FROM Students WHERE Name like @Name", new { Name = "%" + name + "%"}
+        );
+    }
+    
 }
