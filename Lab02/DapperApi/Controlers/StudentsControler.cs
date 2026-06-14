@@ -63,4 +63,9 @@ public class StudentsController : ControllerBase
     {
         return Ok(_repo.SearchByName(name));
     }
+
+    [HttpGet("course")] 
+    public IActionResult getAllWithCourese() {
+        return Ok(_repo.getAllWithCourse());
+    }
 }

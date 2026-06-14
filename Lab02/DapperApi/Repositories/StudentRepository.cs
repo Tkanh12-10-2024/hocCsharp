@@ -1,10 +1,7 @@
-using DapperApi;
 using Dapper;
 using Microsoft.Data.SqlClient;
 using System.Data;
 using DapperApi.Models;
-
-
 
 namespace DapperApi.Repositories;
 
@@ -22,9 +19,10 @@ public class StudentRepository : IStudentRepository
 
     public IEnumerable<Student> GetAll()
     {
-        Console.WriteLine("Connected!");
         using var db = NewConnection();
-        return db.Query<Student>("SELECT * FROM Students");
+
+        return db.Query<Student>(
+            "SELECT * FROM Students");
     }
 
     public Student? GetById(int id)
@@ -36,11 +34,10 @@ public class StudentRepository : IStudentRepository
             new { Id = id });
     }
 
-
-    /* Create new student*/
     public void Create(Student student)
     {
         using var db = NewConnection();
+
         db.Execute(
             "INSERT INTO Students(Name,Age,Email) VALUES(@Name,@Age,@Email)",
             student);
@@ -51,7 +48,11 @@ public class StudentRepository : IStudentRepository
         using var db = NewConnection();
 
         db.Execute(
-            "UPDATE Students SET Name=@Name, Age=@Age WHERE Id=@Id,Email=@Email WHERE Id = @Id",
+            @"UPDATE Students
+              SET Name=@Name,
+                  Age=@Age,
+                  Email=@Email
+              WHERE Id=@Id",
             student);
     }
 
@@ -64,13 +65,52 @@ public class StudentRepository : IStudentRepository
             new { Id = id });
     }
 
-    // search by name
     public IEnumerable<Student> SearchByName(string name)
     {
         using var db = NewConnection();
+
         return db.Query<Student>(
-            "SELECT* FROM Students WHERE Name like @Name", new { Name = "%" + name + "%"}
-        );
+            "SELECT * FROM Students WHERE Name LIKE @Name",
+            new { Name = "%" + name + "%" });
     }
-    
+
+    public IEnumerable<StudentWithCourse> getAllWithCourse()
+    {
+        var sql = @"
+        SELECT
+            s.Id,
+            s.Name,
+            c.Id,
+            c.CourseName
+        FROM Students s
+        JOIN StudentCourses sc
+            ON s.Id = sc.StudentId
+        JOIN Courses c
+            ON sc.CourseId = c.Id
+        ORDER BY s.Id";
+
+        using var db = NewConnection();
+
+        var dic = new Dictionary<int, StudentWithCourse>();
+
+        db.Query<StudentWithCourse,
+                 Course,
+                 StudentWithCourse>(
+            sql,
+            (student, course) =>
+            {
+                if (!dic.TryGetValue(student.Id, out var existing))
+                {
+                    existing = student;
+                    dic.Add(student.Id, existing);
+                }
+
+                existing.Couse.Add(course);
+
+                return existing;
+            },
+            splitOn: "Id");
+
+        return dic.Values;
+    }
 }
