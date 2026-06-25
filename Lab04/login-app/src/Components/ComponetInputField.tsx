@@ -25,7 +25,7 @@ function InputField({
         value={value}
         onChange={onChange}
         placeholder={palcerHolder}
-        className={'input-field ${error ? 'input-error' : ''}'}
+        className={'input-field ${error ? 'input-error' : ''}'} ;
       />
       {error && <span className="error-msg">{error}</span>}
     </div>
